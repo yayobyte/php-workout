@@ -1,3 +1,3 @@
 <?php
-	echo $_POST['nombre'];
+	echo "El nombre ingresado es: ".$_POST['nombre'];
 ?>
