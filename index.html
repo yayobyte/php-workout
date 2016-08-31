@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="row">
+    <div class="col-md-8 text-center col-md-offset-2">
+        <img src="img/intranet-logo.jpg" width="452">
+    </div>
+
+</div>
+<br>
+
+<div class="row">
+    <div class="col-md-10 col-md-offset-1">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#" data-toggle="modal" data-target="#myModal">Info</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-expanded="false">Videos <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li onclick="selectVideo(1)"><a href="#">Video 1</a></li>
+                                <li onclick="selectVideo(2)"><a href="#">Video 2</a></li>
+                                <li onclick="selectVideo(3)"><a href="#">Video 3</a></li>
+                                <li onclick="selectVideo(4)"><a href="#">Video 4</a></li>
+                                <li onclick="selectVideo(5)"><a href="#">Video 5</a></li>
+                                <li onclick="selectVideo(6)"><a href="#">Video 6</a></li>
+                                <li onclick="selectVideo(7)"><a href="#">Video 7</a></li>
+                                <li class="divider"></li>
+                                <li onclick="selectVideo(8)"><a href="#">Video 8</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-right" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search" id="query">
+                        </div>
+                        <button type="submit" class="btn btn-default" onclick="googleSearch()">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- END NAVBAR -->
+
+        <!-- PAGE -->
+
+        <!-- HOME -->
+        <div class="jumbotron" id="home">
+            <h1>Bienvenidos</h1>
+            <p>Por favor seleccione una de las opciones en el men&uacute; principal</p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button" onclick="selectVideo(1)">Get Started</a></p>
+        </div>
+
+
+
+        <!-- VIDEO 1 -->
+        <div id="video1" style="display: none">
+            <div class="row">
+                <div class="col-md-6">
+
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <h1 class="panel-title">Code</h1>
+                        </div>
+                        <div class="panel-body">
+                            <code>
+                            < ?php <br>
+                            echo "**********************";<br>
+                            echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";<br>
+                            echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";<br>
+                            echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";<br>
+                            echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";<br>
+                            echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";<br>
+                            echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";<br>
+                            echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";<br>
+                            ?>
+                            </code>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">
+                            <h1 class="panel-title">Output</h1>
+                        </div>
+                        <div class="panel-body">
+                            <div id="video1-output">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- VIDEO 2 -->
+        <div id="video2" style="display: none">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Code</h3>
+                    <div class="well" >
+                        <code>
+                            < ?php<br>
+                                echo "Hola Mundo";<br>
+                            ?>
+                        </code>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3>Output</h3>
+                    <div class="well" id="video2-output">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- VIDEO 3 -->
+        <div id="video3" style="display: none">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Code</h3>
+                    <div class="well" >
+                        <code>
+                            < ?php <br>
+	                            $dia = date("d"); <br>
+	                            if ($dia <= 10){ <br>
+                        	    &nbsp;&nbsp;	echo "Pagina disponible"; <br>
+                            	} <br>
+	                            else <br>
+                            	{ <br>
+                                &nbsp;&nbsp;	echo "Pagina no disponible"; <br>
+                            	} <br>
+                            ?>
+                        </code>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3>Output</h3>
+                    <div class="well" id="video3-output">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- VIDEO 4 -->
+        <div id="video4" style="display: none">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Code</h3>
+                    <div class="well" >
+                        <code>
+                            < ?php <br>
+                            $nombre = "Cristian"; <br>
+                            $edad = 30; <br>
+                            $numero = 23.5; <br>
+                            $existe = TRUE; <br>
+                            echo $nombre . "\n"; <br>
+                            echo $edad . "\n"; <br>
+                            echo $numero . "\n"; <br>
+                            echo $existe . "\n"; <br>
+                            ?>
+                        </code>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3>Output</h3>
+                    <div class="well" id="video4-output">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- VIDEO 5 -->
+        <div id="video5" style="display: none">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Code</h3>
+                    <div class="well" >
+                        <code>
+                            < ?php <br>
+                            $nombre = "Cristian"; <br>
+                            $espacio = " "; <br>
+                            $apellido = "Gutierrez"; <br>
+                            <br>
+                            echo $nombre.$espacio.$apellido; <br>
+                            ?>
+
+                        </code>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3>Output</h3>
+                    <div class="well" id="video5-output">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- VIDEO 6 -->
+        <div id="video6" style="display: none">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Code</h3>
+                    <div class="well" >
+                        <code>
+                            < ?php <br>
+                                $num = rand(1,20); <br>
+                                echo "el numero generado es ". $num; <br>
+                                if ($num<10){ <br>
+                                &nbsp;&nbsp;    echo "el numero generado es de un digito"; <br>
+                                }else { <br>
+                                &nbsp;&nbsp;    echo "el numero generado es de dos digitos"; <br>
+                                } <br>
+                            ?>
+
+                        </code>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3>Output</h3>
+                    <div class="well" id="video6-output">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- VIDEO 7 -->
+        <div id="video7" style="display: none">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Code</h3>
+                    <div class="well" >
+                        <code>
+                            < ?php <br>
+                                $num = rand(1,30); <br>
+                                for ($i=0; $i<$num; $i++){ <br>
+                                &nbsp;&nbsp;    echo $i; <br>
+                            ?>
+                        </code>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3>Output</h3>
+                    <div class="well" id="video7-output">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- VIDEO 8 -->
+        <div id="video8" style="display: none">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Code</h3>
+                    <div class="well" >
+                        <code>
+                            < ?php<br>
+                                echo $_POST['nombre'];<br>
+                            ?>
+                        </code>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3>Output</h3>
+                    <div class="well" id="video8-output">
+
+                    </div>
+                    <div class="well" id="video8-output2" style="display: none">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- END PAGE-->
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="col-md-12 text-center">
+        <p class="lead">Developed by Cristian Guti&eacute;rrez.</p> All rights reserved
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Info</h4>
+            </div>
+            <div class="modal-body">
+                <div class="text-center">
+                    <p class="lead">Developed by Cristian Guti&eacute;rrez</p>
+                    <p>ITM | 2016</p>
+                    <p class="text-success">You are allowed to copy, distribute or use this software without any permission</p>
+                    <p class="text-info">Github Repo: </p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+
+    var cantOfVideos = 8;
+    function selectVideo(videoId) {
+        $('#home').hide();
+        for (var i=1; i<cantOfVideos+1; i++){
+            $('#video'+i).hide();
+        }
+        $('#video'+videoId).show(500);
+
+    }
+
+    function googleSearch () {
+        var q = $("#query").val();
+        var googleEndPoint = 'https://www.google.com.co/#q=';
+        window.open(googleEndPoint + q);
+    }
+
+    function sendName () {
+        var name = $('#name').val();
+        $('#video8-output2').html(name);
+        $('#video8-output2').show(500);
+    }
+
+    $.ajax('videos/video1.php')
+            .done(function (msg){
+                $('#video1-output').html(msg);
+            });
+    $.ajax('videos/video2.php')
+            .done(function (msg){
+                $('#video2-output').html(msg);
+            });
+    $.ajax('videos/video3.php')
+            .done(function (msg){
+                $('#video3-output').html(msg);
+            });
+    $.ajax('videos/video4.php')
+            .done(function (msg){
+                $('#video4-output').html(msg);
+            });
+    $.ajax('videos/video5.php')
+            .done(function (msg){
+                $('#video5-output').html(msg);
+            });
+    $.ajax('videos/video6.php')
+            .done(function (msg){
+                $('#video6-output').html(msg);
+            });
+    $.ajax('videos/video7.php')
+            .done(function (msg){
+                $('#video7-output').html(msg);
+            });
+    $.ajax('videos/video8.php')
+            .done(function (msg){
+                $('#video8-output').html(msg);
+            });
+
+
+
+</script>
+</body>
+</html>
