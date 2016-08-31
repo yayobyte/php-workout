@@ -6,10 +6,10 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-
+<br>
 <div class="row">
     <div class="col-md-8 text-center col-md-offset-2">
-        <img src="img/intranet-logo.jpg" width="452">
+        <img src="img/intranet-logo.jpg" width="auto">
     </div>
 
 </div>
@@ -33,11 +33,11 @@
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li><a href="https://www.google.com.co/#q=xampp" target="_blank">Xampp <span class="sr-only">(current)</span></a></li>
-                        <li><a href="https://www.google.com.co/#q=mysql" target="_blank">Mysql </a></li>
-                        <li><a href="https://www.google.com.co/#q=tomcat" target="_blank">Tomcat </a></li>
-                        <li><a href="https://www.google.com.co/#q=filezilla" target="_blank">Filezilla </a></li>
-                        <li><a href="https://www.google.com.co/#q=mercury+email" target="_blank">Mercury </a></li>
+                        <li><a onclick="toggleContent('xampp')">Xampp <span class="sr-only">(current)</span></a></li>
+                        <li><a onclick="toggleContent('mysql')">Mysql </a></li>
+                        <li><a onclick="toggleContent('tomcat')">Tomcat </a></li>
+                        <li><a onclick="toggleContent('filezilla')">Filezilla </a></li>
+                        <li><a onclick="toggleContent('mercury')">Mercury </a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                aria-expanded="false">Videos <span class="caret"></span></a>
@@ -75,40 +75,304 @@
         </div>
 
 
+        <div id="videos">
+            <!-- VIDEO 1 -->
+            <div id="video1" style="display: none">
+                <div class="row">
+                    <div class="col-md-6">
 
-        <!-- VIDEO 1 -->
-        <div id="video1" style="display: none">
-            <div class="row">
-                <div class="col-md-6">
-
-                    <div class="panel panel-success">
-                        <div class="panel-heading">
-                            <h1 class="panel-title">Code</h1>
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h1 class="panel-title">Code</h1>
+                            </div>
+                            <div class="panel-body">
+                                <code>
+                                    < ?php <br>
+                                    echo "**********************";<br>
+                                    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";<br>
+                                    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";<br>
+                                    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";<br>
+                                    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";<br>
+                                    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";<br>
+                                    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";<br>
+                                    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";<br>
+                                    ?>
+                                </code>
+                            </div>
                         </div>
-                        <div class="panel-body">
-                            <code>
-                            < ?php <br>
-                            echo "**********************";<br>
-                            echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";<br>
-                            echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";<br>
-                            echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";<br>
-                            echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";<br>
-                            echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";<br>
-                            echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";<br>
-                            echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";<br>
-                            ?>
-                            </code>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel panel-warning">
+                            <div class="panel-heading">
+                                <h1 class="panel-title">Output</h1>
+                            </div>
+                            <div class="panel-body">
+                                <div id="video1-output">
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="panel panel-warning">
-                        <div class="panel-heading">
-                            <h1 class="panel-title">Output</h1>
-                        </div>
-                        <div class="panel-body">
-                            <div id="video1-output">
+            </div>
 
+
+            <!-- VIDEO 2 -->
+            <div id="video2" style="display: none">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Code</h3>
+                            </div>
+                            <div class="panel-body">
+                                <code>
+                                    < ?php<br>
+                                    echo "Hola Mundo";<br>
+                                    ?>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel panel-warning">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Output</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="video2-output">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VIDEO 3 -->
+            <div id="video3" style="display: none">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Code</h3>
+                            </div>
+                            <div class="panel-body">
+                                <code>
+                                    < ?php <br>
+                                    $dia = date("d"); <br>
+                                    if ($dia <= 10){ <br>
+                                    &nbsp;&nbsp; echo "Pagina disponible"; <br>
+                                    } <br>
+                                    else <br>
+                                    { <br>
+                                    &nbsp;&nbsp; echo "Pagina no disponible"; <br>
+                                    } <br>
+                                    ?>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel panel-warning">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Output</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="video3-output">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VIDEO 4 -->
+            <div id="video4" style="display: none">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Code</h3>
+                            </div>
+                            <div class="panel-body">
+                                <code>
+                                    < ?php <br>
+                                    $nombre = "Cristian"; <br>
+                                    $edad = 30; <br>
+                                    $numero = 23.5; <br>
+                                    $existe = TRUE; <br>
+                                    echo $nombre . "\n"; <br>
+                                    echo $edad . "\n"; <br>
+                                    echo $numero . "\n"; <br>
+                                    echo $existe . "\n"; <br>
+                                    ?>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel panel-warning">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Output</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="video4-output">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VIDEO 5 -->
+            <div id="video5" style="display: none">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Code</h3>
+                            </div>
+                            <div class="panel-body">
+                                <code>
+                                    < ?php <br>
+                                    $nombre = "Cristian"; <br>
+                                    $espacio = " "; <br>
+                                    $apellido = "Gutierrez"; <br>
+                                    <br>
+                                    echo $nombre.$espacio.$apellido; <br>
+                                    ?>
+
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel panel-warning">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Output</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="video5-output">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- VIDEO 6 -->
+            <div id="video6" style="display: none">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Code</h3>
+                            </div>
+                            <div class="panel-body">
+                                <code>
+                                    < ?php <br>
+                                    $num = rand(1,20); <br>
+                                    echo "el numero generado es ". $num; <br>
+                                    if ($num<10){ <br>
+                                    &nbsp;&nbsp; echo "el numero generado es de un digito"; <br>
+                                    }else { <br>
+                                    &nbsp;&nbsp; echo "el numero generado es de dos digitos"; <br>
+                                    } <br>
+                                    ?>
+
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel panel-warning">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Panel warning</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="video6-output">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VIDEO 7 -->
+            <div id="video7" style="display: none">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Code</h3>
+                            </div>
+                            <div class="panel-body">
+                                <code>
+                                    < ?php <br>
+                                    $num = rand(1,30); <br>
+                                    for ($i=0; $i<$num; $i++){ <br>
+                                    &nbsp;&nbsp; echo $i; <br>
+                                    ?>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel panel-warning">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Panel warning</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="video7-output">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VIDEO 8 -->
+            <div id="video8" style="display: none">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Code</h3>
+                            </div>
+                            <div class="panel-body">
+                                <code>
+                                    < ?php<br>
+                                    echo "El nombre ingresado es: ".$_POST['nombre'];<br>
+                                    ?>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="panel panel-warning">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Output</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="video8-output">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default" style="display: none" id="video8-container">
+                            <div class="panel-body">
+                                <div id="video8-output2">
+
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -116,32 +380,99 @@
             </div>
         </div>
 
-
-        <!-- VIDEO 2 -->
-        <div id="video2" style="display: none">
+            <!-- TECH CONTAINERS -->
+        <div id="techContainers" style="display: none">
             <div class="row">
+                <!-- XAMPP -->
                 <div class="col-md-6">
-                    <div class="panel panel-success">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Code</h3>
-                        </div>
+
+                    <div class="panel panel-default" id="xampp" style="display: none">
                         <div class="panel-body">
-                            <code>
-                                < ?php<br>
-                                echo "Hola Mundo";<br>
-                                ?>
-                            </code>
+                            <h3>Xampp</h3>
+                            <div class="row">
+                                <div class="col-md-3 text-center">
+                                    <img src="img/xampp.png" class="img-thumbnail left" width="auto"
+                                         style="margin: 0 auto;">
+                                </div>
+                                <div class="col-md-9">
+                                    <p>Es una distribución de Apache completamente gratuita y fácil de instalar
+                                        que contiene MariaDB, PHP y Perl. El paquete de instalación de XAMPP ha sido
+                                        diseñado para ser increíblemente fácil de instalar y usar.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="panel panel-warning">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Output</h3>
-                        </div>
-                        <div class="panel-body">
-                            <div id="video2-output">
 
+                <!-- MYSQL -->
+                <div class="col-md-6">
+                    <div class="panel panel-default" id="mysql" style="display: none">
+                        <div class="panel-body">
+                            <h3>Mysql</h3>
+                            <div class="row">
+                                <div class="col-md-3 text-center">
+                                    <img src="img/mysql.png" class="img-thumbnail left" width="auto"
+                                         style="margin: 0 auto;">
+                                </div>
+                                <div class="col-md-9">
+                                    <p>Es un sistema de gestión de bases de datos relacional desarrollado bajo licencia dual GPL/Licencia comercial por Oracle Corporation y está considerada como la base datos open source más popular del mundo.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TOMCAT -->
+                <div class="col-md-6">
+                    <div class="panel panel-default" id="tomcat" style="display: none">
+                        <div class="panel-body">
+                            <h3>Tomcat</h3>
+                            <div class="row">
+                                <div class="col-md-3 text-center">
+                                    <img src="img/tomcat.png" class="img-thumbnail left" width="auto"
+                                         style="margin: 0 auto;">
+                                </div>
+                                <div class="col-md-9">
+                                    <p>Apache Tomcat (también llamado Jakarta Tomcat o simplemente Tomcat) funciona como un contenedor de servlets desarrollado bajo el proyecto Jakarta en la Apache Software Foundation. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- FILEZILLA -->
+                <div class="col-md-6">
+                    <div class="panel panel-default" id="filezilla" style="display: none">
+                        <div class="panel-body">
+                            <h3>Filezilla</h3>
+                            <div class="row">
+                                <div class="col-md-3 text-center">
+                                    <img src="img/filezilla.png" class="img-thumbnail left" width="auto"
+                                         style="margin: 0 auto;">
+                                </div>
+                                <div class="col-md-9">
+                                    <p>FileZilla es un cliente FTP multiplataforma de código abierto y software libre, licenciado bajo la Licencia Pública General de GNU. Soporta los protocolos FTP, SFTP y FTP sobre SSL/TLS (FTPS).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- MERCURY -->
+                <div class="col-md-6">
+                    <div class="panel panel-default" id="mercury" style="display: none">
+                        <div class="panel-body">
+                            <h3>Mercury</h3>
+                            <div class="row">
+                                <div class="col-md-3 text-center">
+                                    <img src="img/mercury.png" class="img-thumbnail left" width="auto"
+                                         style="margin: 0 auto;">
+                                </div>
+                                <div class="col-md-9">
+                                    <p>un programa que envía y recibe correo en nombre de un grupo de usuarios en una máquina o red de área local. El correo desde el mundo exterior es recibida por Mercury y se coloca en el buzón del destinatario, siempre que el usuario puede acceder a él en cualquier momento posterior.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -149,235 +480,6 @@
             </div>
         </div>
 
-        <!-- VIDEO 3 -->
-        <div id="video3" style="display: none">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="panel panel-success">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Code</h3>
-                        </div>
-                        <div class="panel-body">
-                            <code>
-                                < ?php <br>
-                                $dia = date("d"); <br>
-                                if ($dia <= 10){ <br>
-                                &nbsp;&nbsp;	echo "Pagina disponible"; <br>
-                                } <br>
-                                else <br>
-                                { <br>
-                                &nbsp;&nbsp;	echo "Pagina no disponible"; <br>
-                                } <br>
-                                ?>
-                            </code>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="panel panel-warning">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Output</h3>
-                        </div>
-                        <div class="panel-body">
-                            <div id="video3-output">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- VIDEO 4 -->
-        <div id="video4" style="display: none">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="panel panel-success">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Code</h3>
-                        </div>
-                        <div class="panel-body">
-                            <code>
-                                < ?php <br>
-                                $nombre = "Cristian"; <br>
-                                $edad = 30; <br>
-                                $numero = 23.5; <br>
-                                $existe = TRUE; <br>
-                                echo $nombre . "\n"; <br>
-                                echo $edad . "\n"; <br>
-                                echo $numero . "\n"; <br>
-                                echo $existe . "\n"; <br>
-                                ?>
-                            </code>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="panel panel-warning">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Output</h3>
-                        </div>
-                        <div class="panel-body">
-                            <div id="video4-output">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- VIDEO 5 -->
-        <div id="video5" style="display: none">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="panel panel-success">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Code</h3>
-                        </div>
-                        <div class="panel-body">
-                            <code>
-                                < ?php <br>
-                                $nombre = "Cristian"; <br>
-                                $espacio = " "; <br>
-                                $apellido = "Gutierrez"; <br>
-                                <br>
-                                echo $nombre.$espacio.$apellido; <br>
-                                ?>
-
-                            </code>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="panel panel-warning">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Output</h3>
-                        </div>
-                        <div class="panel-body">
-                            <div  id="video5-output">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- VIDEO 6 -->
-        <div id="video6" style="display: none">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="panel panel-success">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Code</h3>
-                        </div>
-                        <div class="panel-body">
-                            <code>
-                                < ?php <br>
-                                $num = rand(1,20); <br>
-                                echo "el numero generado es ". $num; <br>
-                                if ($num<10){ <br>
-                                &nbsp;&nbsp;    echo "el numero generado es de un digito"; <br>
-                                }else { <br>
-                                &nbsp;&nbsp;    echo "el numero generado es de dos digitos"; <br>
-                                } <br>
-                                ?>
-
-                            </code>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="panel panel-warning">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Panel warning</h3>
-                        </div>
-                        <div class="panel-body">
-                            <div id="video6-output">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- VIDEO 7 -->
-        <div id="video7" style="display: none">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="panel panel-success">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Code</h3>
-                        </div>
-                        <div class="panel-body">
-                            <code>
-                                < ?php <br>
-                                $num = rand(1,30); <br>
-                                for ($i=0; $i<$num; $i++){ <br>
-                                &nbsp;&nbsp;    echo $i; <br>
-                                ?>
-                            </code>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="panel panel-warning">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Panel warning</h3>
-                        </div>
-                        <div class="panel-body">
-                            <div id="video7-output">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- VIDEO 8 -->
-        <div id="video8" style="display: none">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="panel panel-success">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Code</h3>
-                        </div>
-                        <div class="panel-body">
-                            <code>
-                                < ?php<br>
-                                echo "El nombre ingresado es: ".$_POST['nombre'];<br>
-                                ?>
-                            </code>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-
-                    <div class="panel panel-warning">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Output</h3>
-                        </div>
-                        <div class="panel-body">
-                            <div id="video8-output">
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="panel panel-default" style="display: none" id="video8-container">
-                        <div class="panel-body">
-                            <div id="video8-output2" >
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <!-- END PAGE-->
     </div>
@@ -395,15 +497,17 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title" id="myModalLabel">Info</h4>
             </div>
             <div class="modal-body">
                 <div class="text-center">
                     <p class="lead">Developed by Cristian Guti&eacute;rrez</p>
                     <p>ITM | 2016</p>
-                    <p class="text-success">You are allowed to copy, distribute or use this software without any permission</p>
-                    <p >Github Repo: </p> <a href="https://github.com/yayobyte/php-workout" target="_blank">https://github.com/yayobyte/php-workout</a>
+                    <p class="text-success">You are allowed to copy, distribute or use this software without any
+                        permission</p>
+                    <p>Github Repo: </p> <a href="https://github.com/yayobyte/php-workout" target="_blank">https://github.com/yayobyte/php-workout</a>
                 </div>
             </div>
             <div class="modal-footer">
@@ -424,59 +528,66 @@
     var cantOfVideos = 8;
     function selectVideo(videoId) {
         $('#home').hide();
-        for (var i=1; i<cantOfVideos+1; i++){
-            $('#video'+i).hide();
+        $('#techContainers').hide();
+        $('#videos').show();
+        for (var i = 1; i < cantOfVideos + 1; i++) {
+            $('#video' + i).hide();
         }
-        $('#video'+videoId).show(500);
+        $('#video' + videoId).show(500);
 
     }
 
-    function googleSearch () {
+    function googleSearch() {
         var q = $("#query").val();
         var googleEndPoint = 'https://www.google.com.co/#q=';
         window.open(googleEndPoint + q);
     }
 
-    function sendName () {
+    function sendName() {
         var container = $('#video8-output2');
         container.html("El nombre ingresado es: " + $('#name').val());
         $('#video8-container').show(500);
     }
 
+    function toggleContent(id) {
+        $('#videos').hide();
+        $('#home').hide(500);
+        $('#techContainers').show();
+        $('#' + id).toggle(500);
+    }
 
     $.ajax('videos/video1.php')
-            .done(function (msg){
+            .done(function (msg) {
                 $('#video1-output').html(msg);
             });
     $.ajax('videos/video2.php')
-            .done(function (msg){
+            .done(function (msg) {
                 $('#video2-output').html(msg);
             });
     $.ajax('videos/video3.php')
-            .done(function (msg){
+            .done(function (msg) {
                 $('#video3-output').html(msg);
             });
     $.ajax('videos/video4.php')
-            .done(function (msg){
+            .done(function (msg) {
                 $('#video4-output').html(msg);
             });
     $.ajax('videos/video5.php')
-            .done(function (msg){
+            .done(function (msg) {
                 $('#video5-output').html(msg);
             });
     $.ajax('videos/video6.php')
-            .done(function (msg){
+            .done(function (msg) {
                 $('#video6-output').html(msg);
             });
     $.ajax('videos/video7.php')
-            .done(function (msg){
+            .done(function (msg) {
                 $('#video7-output').html(msg);
             });
     $.ajax('videos/video8.php')
-            .done(function (msg){
+            .done(function (msg) {
                 $('#video8-output').html(msg);
             });
-
 
 
 </script>
