@@ -44,13 +44,28 @@
                             <ul class="dropdown-menu" role="menu">
                                 <li onclick="selectVideo(1)"><a href="#">Video 1</a></li>
                                 <li onclick="selectVideo(2)"><a href="#">Video 2</a></li>
+                                <li class="divider"></li>
                                 <li onclick="selectVideo(3)"><a href="#">Video 3</a></li>
+                                <li onclick="selectVideo(9)"><a href="#">Video 3.1</a></li>
+                                <li class="divider"></li>
                                 <li onclick="selectVideo(4)"><a href="#">Video 4</a></li>
                                 <li onclick="selectVideo(5)"><a href="#">Video 5</a></li>
-                                <li onclick="selectVideo(6)"><a href="#">Video 6</a></li>
+                                <li class="divider"></li>
+                                <li onclick="selectVideo(10)"><a href="#">Video 6.1</a></li>
+                                <li onclick="selectVideo(6)"><a href="#">Video 6.2</a></li>
+                                <li class="divider"></li>
                                 <li onclick="selectVideo(7)"><a href="#">Video 7</a></li>
+                                <li onclick="selectVideo(11)"><a href="#">Video 7.1</a></li>
+                                <li onclick="selectVideo(12)"><a href="#">Video 7.2</a></li>
                                 <li class="divider"></li>
                                 <li onclick="selectVideo(8)"><a href="#">Video 8</a></li>
+                                <li onclick="selectVideo(13)"><a href="#">Video 8.1</a></li>
+                                <li class="divider"></li>
+                                <li onclick="selectVideo(14)"><a href="#">Video 9</a></li>
+                                <li onclick="selectVideo(15)"><a href="#">Video 9.1</a></li>
+                                <li class="divider"></li>
+                                <li onclick="selectVideo(16)"><a href="#">Video 10</a></li>
+
                             </ul>
                         </li>
                     </ul>
@@ -78,6 +93,7 @@
         <div id="videos">
             <!-- VIDEO 1 -->
             <div id="video1" style="display: none">
+                <h3>Video 1 <small>Manejo de ECHO</small></h3>
                 <div class="row">
                     <div class="col-md-6">
 
@@ -86,18 +102,18 @@
                                 <h1 class="panel-title">Code</h1>
                             </div>
                             <div class="panel-body">
-                                <code>
-                                    < ?php <br>
-                                    echo "**********************";<br>
-                                    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";<br>
-                                    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";<br>
-                                    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";<br>
-                                    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";<br>
-                                    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";<br>
-                                    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";<br>
-                                    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";<br>
+                                <pre>
+                                    < ?php
+                                    echo "000000&nbsp; &nbsp; 000000";
+                                    echo "&nbsp; &nbsp; &nbsp; 00 &nbsp; &nbsp; &nbsp; 00 &nbsp; &nbsp; 00";
+                                    echo "&nbsp; &nbsp; &nbsp; 00 &nbsp; &nbsp; &nbsp; 00 &nbsp; &nbsp; 00";
+                                    echo "&nbsp; &nbsp; &nbsp; 00 &nbsp; &nbsp; &nbsp; 00 &nbsp; &nbsp; 00";
+                                    echo "&nbsp; &nbsp; &nbsp; 00 &nbsp; &nbsp; &nbsp; 00 &nbsp; &nbsp; 00";
+                                    echo "&nbsp; &nbsp; &nbsp; 00 &nbsp; &nbsp; &nbsp; 00 &nbsp; &nbsp; 00";
+                                    echo "&nbsp; &nbsp; &nbsp; 00 &nbsp; &nbsp; &nbsp; 00 &nbsp; &nbsp; 00";
+                                    echo "&nbsp; &nbsp; &nbsp; 00 &nbsp; &nbsp; &nbsp; 000000";
                                     ?>
-                                </code>
+                                </pre>
                             </div>
                         </div>
                     </div>
@@ -119,6 +135,7 @@
 
             <!-- VIDEO 2 -->
             <div id="video2" style="display: none">
+                <h3>Video 2 <small>Hola Mundo</small></h3>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="panel panel-success">
@@ -126,11 +143,11 @@
                                 <h3 class="panel-title">Code</h3>
                             </div>
                             <div class="panel-body">
-                                <code>
-                                    < ?php<br>
-                                    echo "Hola Mundo";<br>
+                                <pre>
+                                    < ?php
+                                    echo "Hola Mundo";
                                     ?>
-                                </code>
+                                </pre>
                             </div>
                         </div>
                     </div>
@@ -151,6 +168,7 @@
 
             <!-- VIDEO 3 -->
             <div id="video3" style="display: none">
+                <h3>Video 3 <small>Condicionales</small></h3>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="panel panel-success">
@@ -158,18 +176,18 @@
                                 <h3 class="panel-title">Code</h3>
                             </div>
                             <div class="panel-body">
-                                <code>
-                                    < ?php <br>
-                                    $dia = date("d"); <br>
-                                    if ($dia <= 10){ <br>
-                                    &nbsp;&nbsp; echo "Pagina disponible"; <br>
-                                    } <br>
-                                    else <br>
-                                    { <br>
-                                    &nbsp;&nbsp; echo "Pagina no disponible"; <br>
-                                    } <br>
+                                <pre>
+                                    < ?php
+                                    $dia = date("d");
+                                    if ($dia <= 10){
+                                    &nbsp;&nbsp; echo "Pagina disponible";
+                                    }
+                                    else
+                                    {
+                                    &nbsp;&nbsp; echo "Pagina no disponible";
+                                    }
                                     ?>
-                                </code>
+                                </pre>
                             </div>
                         </div>
                     </div>
@@ -188,8 +206,9 @@
                 </div>
             </div>
 
-            <!-- VIDEO 4 -->
-            <div id="video4" style="display: none">
+            <!-- VIDEO 3.1 (VIDEO 9)-->
+            <div id="video9" style="display: none">
+                <h3>Video 3.1 <small>Funci&oacute;n rand()</small></h3>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="panel panel-success">
@@ -197,18 +216,52 @@
                                 <h3 class="panel-title">Code</h3>
                             </div>
                             <div class="panel-body">
-                                <code>
-                                    < ?php <br>
-                                    $nombre = "Cristian"; <br>
-                                    $edad = 30; <br>
-                                    $numero = 23.5; <br>
-                                    $existe = TRUE; <br>
-                                    echo $nombre . "\n"; <br>
-                                    echo $edad . "\n"; <br>
-                                    echo $numero . "\n"; <br>
-                                    echo $existe . "\n"; <br>
+                                <pre>
+                                    < ?php
+                                        $num = rand(1,100);
+                                        echo "El n&uacute;mero generado es: ". $num;
                                     ?>
-                                </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel panel-warning">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Output</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="video9-output">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VIDEO 4 -->
+            <div id="video4" style="display: none">
+                <h3>Video 4 <small>Uso de variables</small></h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Code</h3>
+                            </div>
+                            <div class="panel-body">
+                                <pre>
+                                    < ?php
+                                    $nombre = "Cristian";
+                                    $edad = 30;
+                                    $numero = 23.5;
+                                    $existe = TRUE;
+                                    echo $nombre . "\n";
+                                    echo $edad . "\n";
+                                    echo $numero . "\n";
+                                    echo $existe . "\n";
+                                    ?>
+                                </pre>
                             </div>
                         </div>
                     </div>
@@ -229,6 +282,7 @@
 
             <!-- VIDEO 5 -->
             <div id="video5" style="display: none">
+                <h3>Video 5 <small>Reemplazo de variables en tiempo de ejecuci&oacute;n</small></h3>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="panel panel-success">
@@ -236,16 +290,16 @@
                                 <h3 class="panel-title">Code</h3>
                             </div>
                             <div class="panel-body">
-                                <code>
-                                    < ?php <br>
-                                    $nombre = "Cristian"; <br>
-                                    $espacio = " "; <br>
-                                    $apellido = "Gutierrez"; <br>
-                                    <br>
-                                    echo $nombre.$espacio.$apellido; <br>
+                                <pre>
+                                    < ?php
+                                        $nombre = "Cristian";
+                                        $espacio = " ";
+                                        $apellido = "Gutierrez";
+                                        $dia = 10;
+                                        echo $nombre.$espacio.$apellido . ". Hoy es el d&iacute;a $dia";
                                     ?>
 
-                                </code>
+                                </pre>
                             </div>
                         </div>
                     </div>
@@ -265,8 +319,9 @@
             </div>
 
 
-            <!-- VIDEO 6 -->
-            <div id="video6" style="display: none">
+            <!-- VIDEO 6.1 (VIDEO 10) -->
+            <div id="video10" style="display: none">
+                <h3>Video 6.1 <small>Condicionales</small></h3>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="panel panel-success">
@@ -274,25 +329,66 @@
                                 <h3 class="panel-title">Code</h3>
                             </div>
                             <div class="panel-body">
-                                <code>
-                                    < ?php <br>
-                                    $num = rand(1,20); <br>
-                                    echo "el numero generado es ". $num; <br>
-                                    if ($num<10){ <br>
-                                    &nbsp;&nbsp; echo "el numero generado es de un digito"; <br>
-                                    }else { <br>
-                                    &nbsp;&nbsp; echo "el numero generado es de dos digitos"; <br>
-                                    } <br>
+                                <pre>
+                                    < ?php
+                                        $num = rand(-5,5);
+	                                    echo "El n&uacute;mero generado es " . $num . ", en letras : ";
+                                        $obj1 = ["Menos Cinco", "Menos Cuatro", "Menos tres", "Menos dos","Menos uno", "Cero", "Uno", "Dos", "Tres","Cuatro", "Cinco"];
+                                        $obj2 = [-5,-4,-3,-2,-1,0,1,2,3,4,5];
+                                        $clave = array_search ($num,$obj2);
+                                        echo $obj1[$clave];
                                     ?>
-
-                                </code>
+                                </pre>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="panel panel-warning">
                             <div class="panel-heading">
-                                <h3 class="panel-title">Panel warning</h3>
+                                <h3 class="panel-title">Output</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="video10-output">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VIDEO 6 -->
+            <div id="video6" style="display: none">
+                <h3>Video 6.2 <small>Condicionales 2</small></h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Code</h3>
+                            </div>
+                            <div class="panel-body">
+                                <pre>
+                                    < ?php
+                                        $num = rand(1,100);
+	                                    echo "el numero generado es ". $num ;
+                                        if ($num<10){
+		                                    echo "el numero generado es de un digito";
+                                        }else {
+	                                        if ($num<100){
+                                                echo "el numero generado es de dos digitos";
+                                            }else {
+                                                echo "el numero generado es de tres digitos";
+                                            }
+	                                    }
+                                    ?>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel panel-warning">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Output</h3>
                             </div>
                             <div class="panel-body">
                                 <div id="video6-output">
@@ -306,6 +402,7 @@
 
             <!-- VIDEO 7 -->
             <div id="video7" style="display: none">
+                <h3>Video 7 <small>Ciclos</small></h3>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="panel panel-success">
@@ -313,20 +410,20 @@
                                 <h3 class="panel-title">Code</h3>
                             </div>
                             <div class="panel-body">
-                                <code>
-                                    < ?php <br>
-                                    $num = rand(1,30); <br>
-                                    for ($i=0; $i<$num; $i++){ <br>
-                                    &nbsp;&nbsp; echo $i; <br>
+                                <pre>
+                                    < ?php
+                                    $num = rand(1,30);
+                                    for ($i=0; $i<$num; $i++){
+                                        echo $i;
                                     ?>
-                                </code>
+                                </pre>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="panel panel-warning">
                             <div class="panel-heading">
-                                <h3 class="panel-title">Panel warning</h3>
+                                <h3 class="panel-title">Output</h3>
                             </div>
                             <div class="panel-body">
                                 <div id="video7-output">
@@ -338,8 +435,9 @@
                 </div>
             </div>
 
-            <!-- VIDEO 8 -->
-            <div id="video8" style="display: none">
+            <!-- VIDEO 7.1 (VIDEO 11) -->
+            <div id="video11" style="display: none">
+                <h3>Video 7.1 <small>Ciclos 2</small></h3>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="panel panel-success">
@@ -347,11 +445,82 @@
                                 <h3 class="panel-title">Code</h3>
                             </div>
                             <div class="panel-body">
-                                <code>
-                                    < ?php<br>
-                                    echo "El nombre ingresado es: ".$_POST['nombre'];<br>
+                                <pre>
+                                    < ?php
+                                        echo "Cantidad de dias pasados del mes:";
+	                                    for ($i=1; $i<=date("d"); $i++){
+		                                    echo $i;
+                                        }
                                     ?>
-                                </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel panel-warning">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Output</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="video11-output">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VIDEO 7.2 (VIDEO 12) -->
+            <div id="video12" style="display: none">
+                <h3>Video 7.2 <small>Ciclos 3: Tabla del 2</small></h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Code</h3>
+                            </div>
+                            <div class="panel-body">
+                                <pre>
+                                    < ?php
+                                        for ($i=0; $i<=10; $i++){
+                                            echo "2x" .$i. "= " . ($i * 2);
+                                        }
+                                    ?>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel panel-warning">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Output</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="video12-output">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VIDEO 8 -->
+            <div id="video8" style="display: none">
+                <h3>Video 8 <small>Formularios</small></h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Code</h3>
+                            </div>
+                            <div class="panel-body">
+                                <pre>
+                                    < ?php
+                                        echo "El nombre ingresado es: ".$_POST['nombre'];
+                                    ?>
+                                </pre>
                             </div>
                         </div>
                     </div>
@@ -378,7 +547,204 @@
                     </div>
                 </div>
             </div>
+
+            <!-- VIDEO 8.1 (VIDEO 13)-->
+            <div id="video13" style="display: none">
+                <h3>Video 8 <small>Formularios</small></h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Code</h3>
+                            </div>
+                            <div class="panel-body">
+                                <pre>
+                                    < ?php
+                                        echo "El nombre ingresado es: ".$_POST['nombre'];
+                                        $estado = $_POST['edad'] > 17 ? "es mayor de edad" : "es menor de edad";
+                                        echo $estado;
+                                    ?>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="panel panel-warning">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Output</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="video13-output">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default" style="display: none" id="video13-container">
+                            <div class="panel-body">
+                                <div id="video13-output2">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VIDEO 9 (VIDEO 14)-->
+            <div id="video14" style="display: none">
+                <h3>Video 9 <small>Formularios con radio</small></h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Code</h3>
+                            </div>
+                            <div class="panel-body">
+                                <pre>
+                                    < ?php
+                                        $nombre = $_POST['nombre'];
+                                        $valor = $_POST['radioEstudios'];
+                                        if ($valor == 1) {$texto = "no tiene estudios";}
+                                        if ($valor == 2) {$texto = "tiene estudios primarios";}
+                                        if ($valor == 3) {$texto = "tiene estudios secundarios";}
+	                                    echo $nombre . $texto;
+                                    ?>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="panel panel-warning">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Output</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="video14-output">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default" style="display: none" id="video14-container">
+                            <div class="panel-body">
+                                <div id="video14-output2">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- VIDEO 9 (VIDEO 15)-->
+            <div id="video15" style="display: none">
+                <h3>Video 9.1 <small>Formularios con radio y campos de n&uacute;mero</small></h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Code</h3>
+                            </div>
+                            <div class="panel-body">
+                                <pre>
+                                    < ?php
+                                        $n1 = $_POST['n1'];
+                                        $n2 = $_POST['n2'];
+                                        $operacion = $_POST['radioSuma'];
+                                        $resultado = $operacion == "sumar" ? $n1 + $n2 : $n1 - $n2;
+                                        echo 'Operacion: ' . $operacion . " Resultado = " . $resultado;
+                                    ?>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="panel panel-warning">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Output</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="video15-output">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default" style="display: none" id="video15-container">
+                            <div class="panel-body">
+                                <div id="video15-output2">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VIDEO 10 (VIDEO 16)-->
+            <div id="video16" style="display: none">
+                <h3>Video 10 <small>Formularios con checkboxes</small></h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Code</h3>
+                            </div>
+                            <div class="panel-body">
+                                <pre>
+                                    < ?php
+                                        $n1 = $_POST['n1'];
+                                        $n2 = $_POST['n2'];
+                                        $sumar = $_POST['sumar'];
+                                        $restar = $_POST['restar'];
+                                        $text = '';
+                                        if ($sumar) {
+                                            $sum = $n1 + $n2;
+                                            $text .= ' la suma es : ' . $sum ;
+                                        }
+                                        if ($restar) {
+                                            $sub = $n1 - $n2;
+                                            $text .= ' la resta es : ' . $sub ;
+                                        }
+                                        echo $text;
+                                    ?>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="panel panel-warning">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Output</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="video16-output">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default" style="display: none" id="video16-container">
+                            <div class="panel-body">
+                                <div id="video16-output2">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
         </div>
+    </div>
 
             <!-- TECH CONTAINERS -->
         <div id="techContainers" style="display: none">
@@ -525,7 +891,7 @@
 
 <script>
 
-    var cantOfVideos = 8;
+    var cantOfVideos = 17;
     function selectVideo(videoId) {
         $('#home').hide();
         $('#techContainers').hide();
@@ -544,9 +910,65 @@
     }
 
     function sendName() {
+        $('#video8-container').hide();
         var container = $('#video8-output2');
         container.html("El nombre ingresado es: " + $('#name').val());
         $('#video8-container').show(500);
+    }
+
+    function sendNameAndAge() {
+        $('#video13-container').hide();
+        var container = $('#video13-output2');
+        var estado = $('#age2').val() > 17 ? "mayor de edad" : "menor de edad";
+        container.html("El nombre ingresado es: " + $('#name2').val() + "<br>" + "es " + estado);
+        $('#video13-container').show(500);
+    }
+
+    function sendNameAndRadios() {
+        $('#video14-container').hide();
+        var container = $('#video14-output2');
+        var valor = $('input[name=radioEstudios]:checked').val();
+        var texto = "";
+        if (valor == 1) {texto = 'no tiene estudios'}
+        if (valor == 2) {texto = 'tiene Estudios Primarios'}
+        if (valor == 3) {texto = 'tiene estudios secundarios'}
+        container.html($('#name3').val() + " " + texto);
+        $('#video14-container').show(500);
+    }
+
+    function sumNumbers() {
+        $('#video15-container').hide();
+        var container = $('#video15-output2');
+        var operacion = $('input[name=radioSuma]:checked').val();
+        var n1 = parseInt($('#idSumNumber1').val());
+        var n2 = parseInt($('#idSumNumber2').val());
+        var resultado = operacion == 'sumar' ? (n1 + n2) : (n1 - n2);
+        container.html('Operacion: ' + operacion + " Resultado = " + resultado);
+        $('#video15-container').show(500);
+    }
+
+    function sumNumbersCheckBoxes() {
+        $('#video16-container').hide();
+        var container = $('#video16-output2');
+        var sumar = $('#idSumar10').is(':checked');
+        var restar = $('#idRestar10').is(':checked');
+        var n1 = parseInt($('#idSumNumber10_1').val());
+        var n2 = parseInt($('#idSumNumber10_2').val());
+
+        var sum = 0,sub = 0;
+        var text = '';
+        if (sumar) {
+            sum = n1 + n2;
+            text += ' la suma es : ' + sum ;
+        }
+        if (restar) {
+            sub = n1 - n2;
+            text += ' la resta es : ' + sub ;
+        }
+
+        container.html(text);
+        $('#video16-container').show(500);
+
     }
 
     function toggleContent(id) {
@@ -588,6 +1010,39 @@
             .done(function (msg) {
                 $('#video8-output').html(msg);
             });
+    $.ajax('videos/video3_1.php')
+            .done(function (msg) {
+                $('#video9-output').html(msg);
+            });
+    $.ajax('videos/video6_1.php')
+            .done(function (msg) {
+                $('#video10-output').html(msg);
+            });
+    $.ajax('videos/video7_1.php')
+            .done(function (msg) {
+                $('#video11-output').html(msg);
+            });
+    $.ajax('videos/video7_2.php')
+            .done(function (msg) {
+                $('#video12-output').html(msg);
+            });
+    $.ajax('videos/video8_1.php')
+            .done(function (msg) {
+                $('#video13-output').html(msg);
+            });
+    $.ajax('videos/video9.php')
+            .done(function (msg) {
+                $('#video14-output').html(msg);
+            });
+    $.ajax('videos/video9_1.php')
+            .done(function (msg) {
+                $('#video15-output').html(msg);
+            });
+    $.ajax('videos/video10.php')
+            .done(function (msg) {
+                $('#video16-output').html(msg);
+            });
+
 
 
 </script>
