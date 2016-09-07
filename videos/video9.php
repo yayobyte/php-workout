@@ -4,7 +4,7 @@
         <input type="text" class="form-control" name="nombre3" placeholder="Albert Einstein"  id="name3" >
     </div>
     <div class="form-group">
-        <label class="control-label" for="radioEstudios">Edad</label>
+        <label class="control-label" for="radioEstudios">Estudios</label>
         <div class="radio">
             <label>
                 <input type="radio" name="radioEstudios" id="idRadioEstudios1" value="1" checked>
