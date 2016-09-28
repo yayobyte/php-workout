@@ -94,6 +94,64 @@ function getMode () {
     $('#video18-container').show(500);
 }
 
+function getMax () {
+    $('#video19-container').hide();
+    var container = $('#video19-output2');
+    var values = $('#inputMax').val().split(",");
+    container.html("El m&aacute;ximo es: " + math.max(values));
+    $('#video19-container').show(500);
+}
+
+function getMin () {
+    $('#video20-container').hide();
+    var container = $('#video20-output2');
+    var values = $('#inputMin').val().split(",");
+    container.html("El m&iacute;nimo es: " + math.min(values));
+    $('#video20-container').show(500);
+}
+
+function concat () {
+    $('#video22-container').hide();
+    var container = $('#video22-output2');
+    var values = $('#inputConcat').val().split(",");
+    container.html("Los valores concatenados son: " + values.join(' '));
+    $('#video22-container').show(500);
+}
+
+//TODO: Contar Si
+
+function repeat () {
+    $('#video23-container').hide();
+    var container = $('#video23-output2');
+    var text = $('#inputRepeatText').val();
+    var number = $('#inputRepeatNumber').val();
+    var result = '';
+    for (var c=0; c<number; c++){
+        result +=text;
+    }
+    container.html("Los valores repetidos son: " + result);
+    $('#video23-container').show(500);
+}
+
+function extract () {
+    $('#video24-container').hide();
+    var container = $('#video24-output2');
+    var text = $('#inputExtractText').val();
+    var position = $('#inputExtractPosition').val();
+    var len = $('#inputExtractLen').val();
+
+    container.html("La subcadena extraida es: " + text.substr(position,len));
+    $('#video24-container').show(500);
+}
+
+function isText () {
+    $('#video25-container').hide();
+    var container = $('#video25-output2');
+    var text = $('#inputIsText').val();
+    var validation = (text.match(/[^a-zA-Z]/) )? 'No' : 'Si';
+    container.html("La cadena es texto? " + validation );
+    $('#video25-container').show(500);
+}
 
 
 function toggleContent(id) {
@@ -103,76 +161,3 @@ function toggleContent(id) {
     $('#' + id).toggle(500);
 }
 
-$.ajax('videos/video1.php')
-    .done(function (msg) {
-        $('#video1-output').html(msg);
-    });
-$.ajax('videos/video2.php')
-    .done(function (msg) {
-        $('#video2-output').html(msg);
-    });
-$.ajax('videos/video3.php')
-    .done(function (msg) {
-        $('#video3-output').html(msg);
-    });
-$.ajax('videos/video4.php')
-    .done(function (msg) {
-        $('#video4-output').html(msg);
-    });
-$.ajax('videos/video5.php')
-    .done(function (msg) {
-        $('#video5-output').html(msg);
-    });
-$.ajax('videos/video6.php')
-    .done(function (msg) {
-        $('#video6-output').html(msg);
-    });
-$.ajax('videos/video7.php')
-    .done(function (msg) {
-        $('#video7-output').html(msg);
-    });
-$.ajax('videos/video8.php')
-    .done(function (msg) {
-        $('#video8-output').html(msg);
-    });
-$.ajax('videos/video3_1.php')
-    .done(function (msg) {
-        $('#video9-output').html(msg);
-    });
-$.ajax('videos/video6_1.php')
-    .done(function (msg) {
-        $('#video10-output').html(msg);
-    });
-$.ajax('videos/video7_1.php')
-    .done(function (msg) {
-        $('#video11-output').html(msg);
-    });
-$.ajax('videos/video7_2.php')
-    .done(function (msg) {
-        $('#video12-output').html(msg);
-    });
-$.ajax('videos/video8_1.php')
-    .done(function (msg) {
-        $('#video13-output').html(msg);
-    });
-$.ajax('videos/video9.php')
-    .done(function (msg) {
-        $('#video14-output').html(msg);
-    });
-$.ajax('videos/video9_1.php')
-    .done(function (msg) {
-        $('#video15-output').html(msg);
-    });
-$.ajax('videos/video10.php')
-    .done(function (msg) {
-        $('#video16-output').html(msg);
-    });
-/*TALLER*/
-$.ajax('taller/median_form.php')
-    .done(function (msg) {
-        $('#video17-output').html(msg);
-    });
-$.ajax('taller/moda_form.php')
-    .done(function (msg) {
-        $('#video18-output').html(msg);
-    });

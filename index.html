@@ -123,16 +123,16 @@
                             </div>
                             <div class="panel-body">
                                 <pre>
-                                    < ?php
-                                    echo "000000&nbsp; &nbsp; 000000";
-                                    echo "&nbsp; &nbsp; &nbsp; 00 &nbsp; &nbsp; &nbsp; 00 &nbsp; &nbsp; 00";
-                                    echo "&nbsp; &nbsp; &nbsp; 00 &nbsp; &nbsp; &nbsp; 00 &nbsp; &nbsp; 00";
-                                    echo "&nbsp; &nbsp; &nbsp; 00 &nbsp; &nbsp; &nbsp; 00 &nbsp; &nbsp; 00";
-                                    echo "&nbsp; &nbsp; &nbsp; 00 &nbsp; &nbsp; &nbsp; 00 &nbsp; &nbsp; 00";
-                                    echo "&nbsp; &nbsp; &nbsp; 00 &nbsp; &nbsp; &nbsp; 00 &nbsp; &nbsp; 00";
-                                    echo "&nbsp; &nbsp; &nbsp; 00 &nbsp; &nbsp; &nbsp; 00 &nbsp; &nbsp; 00";
-                                    echo "&nbsp; &nbsp; &nbsp; 00 &nbsp; &nbsp; &nbsp; 000000";
-                                    ?>
+< ?php
+echo "000000&nbsp; &nbsp; 000000";
+echo "&nbsp; &nbsp; &nbsp; 00 &nbsp; &nbsp; &nbsp; 00 &nbsp; &nbsp; 00";
+echo "&nbsp; &nbsp; &nbsp; 00 &nbsp; &nbsp; &nbsp; 00 &nbsp; &nbsp; 00";
+echo "&nbsp; &nbsp; &nbsp; 00 &nbsp; &nbsp; &nbsp; 00 &nbsp; &nbsp; 00";
+echo "&nbsp; &nbsp; &nbsp; 00 &nbsp; &nbsp; &nbsp; 00 &nbsp; &nbsp; 00";
+echo "&nbsp; &nbsp; &nbsp; 00 &nbsp; &nbsp; &nbsp; 00 &nbsp; &nbsp; 00";
+echo "&nbsp; &nbsp; &nbsp; 00 &nbsp; &nbsp; &nbsp; 00 &nbsp; &nbsp; 00";
+echo "&nbsp; &nbsp; &nbsp; 00 &nbsp; &nbsp; &nbsp; 000000";
+?>
                                 </pre>
                             </div>
                         </div>
@@ -164,9 +164,9 @@
                             </div>
                             <div class="panel-body">
                                 <pre>
-                                    < ?php
-                                    echo "Hola Mundo";
-                                    ?>
+< ?php
+echo "Hola Mundo";
+?>
                                 </pre>
                             </div>
                         </div>
@@ -197,16 +197,16 @@
                             </div>
                             <div class="panel-body">
                                 <pre>
-                                    < ?php
-                                    $dia = date("d");
-                                    if ($dia <= 10){
-                                    &nbsp;&nbsp; echo "Pagina disponible";
-                                    }
-                                    else
-                                    {
-                                    &nbsp;&nbsp; echo "Pagina no disponible";
-                                    }
-                                    ?>
+< ?php
+$dia = date("d");
+if ($dia <= 10){
+    echo "Pagina disponible";
+}
+else
+{
+    echo "Pagina no disponible";
+}
+?>
                                 </pre>
                             </div>
                         </div>
@@ -237,10 +237,10 @@
                             </div>
                             <div class="panel-body">
                                 <pre>
-                                    < ?php
-                                        $num = rand(1,100);
-                                        echo "El n&uacute;mero generado es: ". $num;
-                                    ?>
+< ?php
+$num = rand(1,100);
+echo "El n&uacute;mero generado es: ". $num;
+?>
                                 </pre>
                             </div>
                         </div>
@@ -271,16 +271,16 @@
                             </div>
                             <div class="panel-body">
                                 <pre>
-                                    < ?php
-                                    $nombre = "Cristian";
-                                    $edad = 30;
-                                    $numero = 23.5;
-                                    $existe = TRUE;
-                                    echo $nombre . "\n";
-                                    echo $edad . "\n";
-                                    echo $numero . "\n";
-                                    echo $existe . "\n";
-                                    ?>
+< ?php
+$nombre = "Cristian";
+$edad = 30;
+$numero = 23.5;
+$existe = TRUE;
+echo $nombre . "\n";
+echo $edad . "\n";
+echo $numero . "\n";
+echo $existe . "\n";
+?>
                                 </pre>
                             </div>
                         </div>
@@ -311,13 +311,13 @@
                             </div>
                             <div class="panel-body">
                                 <pre>
-                                    < ?php
-                                        $nombre = "Cristian";
-                                        $espacio = " ";
-                                        $apellido = "Gutierrez";
-                                        $dia = 10;
-                                        echo $nombre.$espacio.$apellido . ". Hoy es el d&iacute;a $dia";
-                                    ?>
+< ?php
+    $nombre = "Cristian";
+    $espacio = " ";
+    $apellido = "Gutierrez";
+    $dia = 10;
+    echo $nombre.$espacio.$apellido . ". Hoy es el d&iacute;a $dia";
+?>
 
                                 </pre>
                             </div>
@@ -350,14 +350,14 @@
                             </div>
                             <div class="panel-body">
                                 <pre>
-                                    < ?php
-                                        $num = rand(-5,5);
-	                                    echo "El n&uacute;mero generado es " . $num . ", en letras : ";
-                                        $obj1 = ["Menos Cinco", "Menos Cuatro", "Menos tres", "Menos dos","Menos uno", "Cero", "Uno", "Dos", "Tres","Cuatro", "Cinco"];
-                                        $obj2 = [-5,-4,-3,-2,-1,0,1,2,3,4,5];
-                                        $clave = array_search ($num,$obj2);
-                                        echo $obj1[$clave];
-                                    ?>
+< ?php
+    $num = rand(-5,5);
+    echo "El n&uacute;mero generado es " . $num . ", en letras : ";
+    $obj1 = ["Menos Cinco", "Menos Cuatro", "Menos tres", "Menos dos","Menos uno", "Cero", "Uno", "Dos", "Tres","Cuatro", "Cinco"];
+    $obj2 = [-5,-4,-3,-2,-1,0,1,2,3,4,5];
+    $clave = array_search ($num,$obj2);
+    echo $obj1[$clave];
+?>
                                 </pre>
                             </div>
                         </div>
@@ -388,19 +388,19 @@
                             </div>
                             <div class="panel-body">
                                 <pre>
-                                    < ?php
-                                        $num = rand(1,100);
-	                                    echo "el numero generado es ". $num ;
-                                        if ($num<10){
-		                                    echo "el numero generado es de un digito";
-                                        }else {
-	                                        if ($num<100){
-                                                echo "el numero generado es de dos digitos";
-                                            }else {
-                                                echo "el numero generado es de tres digitos";
-                                            }
-	                                    }
-                                    ?>
+< ?php
+    $num = rand(1,100);
+    echo "el numero generado es ". $num ;
+    if ($num<10){
+        echo "el numero generado es de un digito";
+    }else {
+        if ($num<100){
+            echo "el numero generado es de dos digitos";
+        }else {
+            echo "el numero generado es de tres digitos";
+        }
+    }
+?>
                                 </pre>
                             </div>
                         </div>
@@ -431,11 +431,11 @@
                             </div>
                             <div class="panel-body">
                                 <pre>
-                                    < ?php
-                                    $num = rand(1,30);
-                                    for ($i=0; $i<$num; $i++){
-                                        echo $i;
-                                    ?>
+< ?php
+$num = rand(1,30);
+for ($i=0; $i<$num; $i++){
+    echo $i;
+?>
                                 </pre>
                             </div>
                         </div>
@@ -466,12 +466,12 @@
                             </div>
                             <div class="panel-body">
                                 <pre>
-                                    < ?php
-                                        echo "Cantidad de dias pasados del mes:";
-	                                    for ($i=1; $i<=date("d"); $i++){
-		                                    echo $i;
-                                        }
-                                    ?>
+< ?php
+    echo "Cantidad de dias pasados del mes:";
+    for ($i=1; $i<=date("d"); $i++){
+        echo $i;
+    }
+?>
                                 </pre>
                             </div>
                         </div>
@@ -502,11 +502,11 @@
                             </div>
                             <div class="panel-body">
                                 <pre>
-                                    < ?php
-                                        for ($i=0; $i<=10; $i++){
-                                            echo "2x" .$i. "= " . ($i * 2);
-                                        }
-                                    ?>
+< ?php
+    for ($i=0; $i<=10; $i++){
+        echo "2x" .$i. "= " . ($i * 2);
+    }
+?>
                                 </pre>
                             </div>
                         </div>
@@ -537,9 +537,9 @@
                             </div>
                             <div class="panel-body">
                                 <pre>
-                                    < ?php
-                                        echo "El nombre ingresado es: ".$_POST['nombre'];
-                                    ?>
+< ?php
+    echo "El nombre ingresado es: ".$_POST['nombre'];
+?>
                                 </pre>
                             </div>
                         </div>
@@ -579,11 +579,11 @@
                             </div>
                             <div class="panel-body">
                                 <pre>
-                                    < ?php
-                                        echo "El nombre ingresado es: ".$_POST['nombre'];
-                                        $estado = $_POST['edad'] > 17 ? "es mayor de edad" : "es menor de edad";
-                                        echo $estado;
-                                    ?>
+< ?php
+    echo "El nombre ingresado es: ".$_POST['nombre'];
+    $estado = $_POST['edad'] > 17 ? "es mayor de edad" : "es menor de edad";
+    echo $estado;
+?>
                                 </pre>
                             </div>
                         </div>
@@ -623,14 +623,14 @@
                             </div>
                             <div class="panel-body">
                                 <pre>
-                                    < ?php
-                                        $nombre = $_POST['nombre'];
-                                        $valor = $_POST['radioEstudios'];
-                                        if ($valor == 1) {$texto = "no tiene estudios";}
-                                        if ($valor == 2) {$texto = "tiene estudios primarios";}
-                                        if ($valor == 3) {$texto = "tiene estudios secundarios";}
-	                                    echo $nombre . $texto;
-                                    ?>
+< ?php
+    $nombre = $_POST['nombre'];
+    $valor = $_POST['radioEstudios'];
+    if ($valor == 1) {$texto = "no tiene estudios";}
+    if ($valor == 2) {$texto = "tiene estudios primarios";}
+    if ($valor == 3) {$texto = "tiene estudios secundarios";}
+    echo $nombre . $texto;
+?>
                                 </pre>
                             </div>
                         </div>
@@ -671,13 +671,13 @@
                             </div>
                             <div class="panel-body">
                                 <pre>
-                                    < ?php
-                                        $n1 = $_POST['n1'];
-                                        $n2 = $_POST['n2'];
-                                        $operacion = $_POST['radioSuma'];
-                                        $resultado = $operacion == "sumar" ? $n1 + $n2 : $n1 - $n2;
-                                        echo 'Operacion: ' . $operacion . " Resultado = " . $resultado;
-                                    ?>
+< ?php
+    $n1 = $_POST['n1'];
+    $n2 = $_POST['n2'];
+    $operacion = $_POST['radioSuma'];
+    $resultado = $operacion == "sumar" ? $n1 + $n2 : $n1 - $n2;
+    echo 'Operacion: ' . $operacion . " Resultado = " . $resultado;
+?>
                                 </pre>
                             </div>
                         </div>
@@ -717,22 +717,22 @@
                             </div>
                             <div class="panel-body">
                                 <pre>
-                                    < ?php
-                                        $n1 = $_POST['n1'];
-                                        $n2 = $_POST['n2'];
-                                        $sumar = $_POST['sumar'];
-                                        $restar = $_POST['restar'];
-                                        $text = '';
-                                        if ($sumar) {
-                                            $sum = $n1 + $n2;
-                                            $text .= ' la suma es : ' . $sum ;
-                                        }
-                                        if ($restar) {
-                                            $sub = $n1 - $n2;
-                                            $text .= ' la resta es : ' . $sub ;
-                                        }
-                                        echo $text;
-                                    ?>
+< ?php
+    $n1 = $_POST['n1'];
+    $n2 = $_POST['n2'];
+    $sumar = $_POST['sumar'];
+    $restar = $_POST['restar'];
+    $text = '';
+    if ($sumar) {
+        $sum = $n1 + $n2;
+        $text .= ' la suma es : ' . $sum ;
+    }
+    if ($restar) {
+        $sub = $n1 - $n2;
+        $text .= ' la resta es : ' . $sub ;
+    }
+    echo $text;
+?>
                                 </pre>
                             </div>
                         </div>
@@ -773,21 +773,21 @@
                             </div>
                             <div class="panel-body">
                                 <pre>
-                                    < ?php
-                                        function calculateMedian($arr) {
-                                            sort($arr);
-                                            $count = count($arr);
-                                            $middleval = floor(($count-1)/2);
-                                            if($count % 2) {
-                                                $median = $arr[$middleval];
-                                            } else {
-                                                $low = $arr[$middleval];
-                                                $high = $arr[$middleval+1];
-                                                $median = (($low+$high)/2);
-                                            }
-                                            return $median;
-                                        }
-                                    ?>
+< ?php
+    function calculateMedian($arr) {
+        sort($arr);
+        $count = count($arr);
+        $middleval = floor(($count-1)/2);
+        if($count % 2) {
+            $median = $arr[$middleval];
+        } else {
+            $low = $arr[$middleval];
+            $high = $arr[$middleval+1];
+            $median = (($low+$high)/2);
+        }
+        return $median;
+    }
+?>
                                 </pre>
                             </div>
                         </div>
@@ -827,13 +827,13 @@
                             </div>
                             <div class="panel-body">
                                 <pre>
-                                    < ?php
-                                        function calculateMode ($valueArray)
-                                        {
-                                            $values = array_count_values($valueArray);
-                                            return array_search(max($values), $values);
-                                        }
-                                    ?>
+< ?php
+    function calculateMode ($valueArray)
+    {
+        $values = array_count_values($valueArray);
+        return array_search(max($values), $values);
+    }
+?>
                                 </pre>
                             </div>
                         </div>
@@ -862,6 +862,319 @@
                 </div>
             </div>
 
+            <!-- MAX (VIDEO 19)-->
+            <div id="video19" style="display: none">
+                <h3>Taller <small>M&aacute;ximo</small></h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Code</h3>
+                            </div>
+                            <div class="panel-body">
+                                <pre>
+< ?php
+    echo max($_GET['array']);
+?>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="panel panel-warning">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Output</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="video19-output">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default" style="display: none" id="video19-container">
+                            <div class="panel-body">
+                                <div id="video19-output2">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MIN (VIDEO 20)-->
+            <div id="video20" style="display: none">
+                <h3>Taller <small>M&iacute;nimo</small></h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Code</h3>
+                            </div>
+                            <div class="panel-body">
+                                <pre>
+< ?php
+    echo min($_GET['array']);
+?>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="panel panel-warning">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Output</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="video20-output">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default" style="display: none" id="video20-container">
+                            <div class="panel-body">
+                                <div id="video20-output2">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTAR SI (VIDEO 21)-->
+            <div id="video21" style="display: none">
+                <h3>Taller <small>Contar Si</small></h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Code</h3>
+                            </div>
+                            <div class="panel-body">
+                            <pre>
+< ?php
+    echo min($_GET['array']);
+?>
+                            </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="panel panel-warning">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Output</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="video21-output">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default" style="display: none" id="video21-container">
+                            <div class="panel-body">
+                                <div id="video21-output2">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- CONCAT (VIDEO 22)-->
+            <div id="video22" style="display: none">
+                <h3>Taller <small>Concatenar</small></h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Code</h3>
+                            </div>
+                            <div class="panel-body">
+                            <pre>
+< ?php
+    $values = explode(',',$_GET['array']);
+    echo implode (' ',$values);
+?>
+                            </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="panel panel-warning">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Output</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="video22-output">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default" style="display: none" id="video22-container">
+                            <div class="panel-body">
+                                <div id="video22-output2">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- REPETIR (VIDEO 23)-->
+            <div id="video23" style="display: none">
+                <h3>Taller <small>Repetir</small></h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Code</h3>
+                            </div>
+                            <div class="panel-body">
+                            <pre>
+< ?php
+function repeat ($text, $val) {
+    $repeat = $val;
+    $return = '';
+    $c=0;
+    while ($c<$repeat){
+        $return .= $text;
+        $c++;
+    }
+    return $return;
+}
+
+                            </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="panel panel-warning">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Output</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="video23-output">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default" style="display: none" id="video23-container">
+                            <div class="panel-body">
+                                <div id="video23-output2">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- REPETIR (VIDEO 24)-->
+            <div id="video24" style="display: none">
+                <h3>Taller <small>Extraer</small></h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Code</h3>
+                            </div>
+                            <div class="panel-body">
+                            <pre>
+< ?php
+    $string = $_GET['text'];
+    $position = $_GET['position'];
+    $len = $_GET['len'];
+    echo substr($string, $position, $len);
+?>
+                            </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="panel panel-warning">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Output</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="video24-output">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default" style="display: none" id="video24-container">
+                            <div class="panel-body">
+                                <div id="video24-output2">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ESTEXTO (VIDEO 25)-->
+            <div id="video25" style="display: none">
+                <h3>Taller <small>Extraer</small></h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Code</h3>
+                            </div>
+                            <div class="panel-body">
+                            <pre>
+< ?php
+function isText ($testcase) {
+    if (ctype_alpha($testcase)) {
+        echo "The string $testcase consists of all letters.\n";
+    } else {
+        echo "The string $testcase does not consist of all letters.\n";
+    }
+}
+?>
+                            </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="panel panel-warning">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Output</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="video25-output">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default" style="display: none" id="video25-container">
+                            <div class="panel-body">
+                                <div id="video25-output2">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
         </div>
@@ -1011,5 +1324,6 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/math.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/ajax.js"></script>
 </body>
 </html>
