@@ -95,3 +95,7 @@ $.ajax('taller/isText_form.php')
     .done(function (msg) {
         $('#video25-output').html(msg);
     });
+$.ajax('taller/numToWords_form.php')
+    .done(function (msg) {
+        $('#video26-output').html(msg);
+    });

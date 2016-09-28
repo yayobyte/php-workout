@@ -153,6 +153,17 @@ function isText () {
     $('#video25-container').show(500);
 }
 
+function numToWords () {
+    $('#video26-container').hide();
+    var container = $('#video26-output2');
+    var text = $('#inputNumToWords').val();
+    $.ajax('taller/numToWords.php?num=' + text)
+        .done(function (res) {
+            container.html("El n&uacute;mero es: " + res );
+            $('#video26-container').show(500);
+        });
+}
+
 
 function toggleContent(id) {
     $('#videos').hide();
