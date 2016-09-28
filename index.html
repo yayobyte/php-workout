@@ -68,6 +68,26 @@
 
                             </ul>
                         </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-expanded="false">Taller <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li onclick="selectVideo(17)"><a href="#">Media</a></li>
+                                <li onclick="selectVideo(18)"><a href="#">Moda</a></li>
+                                <li class="divider"></li>
+                                <li onclick="selectVideo(19)"><a href="#">M&aacute;ximo</a></li>
+                                <li onclick="selectVideo(20)"><a href="#">M&iacute;nimo</a></li>
+                                <li class="divider"></li>
+                                <li onclick="selectVideo(21)"><a href="#">Contar Si</a></li>
+                                <li onclick="selectVideo(22)"><a href="#">Concatenar</a></li>
+                                <li class="divider"></li>
+                                <li onclick="selectVideo(23)"><a href="#">Repetir</a></li>
+                                <li onclick="selectVideo(24)"><a href="#">Extraer</a></li>
+                                <li class="divider"></li>
+                                <li onclick="selectVideo(25)"><a href="#">Es texto</a></li>
+                                <li onclick="selectVideo(26)"><a href="#">Numeros a letras</a></li>
+                            </ul>
+                        </li>
                     </ul>
                     <form class="navbar-form navbar-right" role="search">
                         <div class="form-group">
@@ -742,6 +762,107 @@
             </div>
 
 
+            <!-- MEDIANA (VIDEO 17)-->
+            <div id="video17" style="display: none">
+                <h3>Taller <small>Mediana</small></h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Code</h3>
+                            </div>
+                            <div class="panel-body">
+                                <pre>
+                                    < ?php
+                                        function calculateMedian($arr) {
+                                            sort($arr);
+                                            $count = count($arr);
+                                            $middleval = floor(($count-1)/2);
+                                            if($count % 2) {
+                                                $median = $arr[$middleval];
+                                            } else {
+                                                $low = $arr[$middleval];
+                                                $high = $arr[$middleval+1];
+                                                $median = (($low+$high)/2);
+                                            }
+                                            return $median;
+                                        }
+                                    ?>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="panel panel-warning">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Output</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="video17-output">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default" style="display: none" id="video17-container">
+                            <div class="panel-body">
+                                <div id="video17-output2">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODA (VIDEO 18)-->
+            <div id="video18" style="display: none">
+                <h3>Taller <small>Moda</small></h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Code</h3>
+                            </div>
+                            <div class="panel-body">
+                                <pre>
+                                    < ?php
+                                        function calculateMode ($valueArray)
+                                        {
+                                            $values = array_count_values($valueArray);
+                                            return array_search(max($values), $values);
+                                        }
+                                    ?>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="panel panel-warning">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Output</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="video18-output">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default" style="display: none" id="video18-container">
+                            <div class="panel-body">
+                                <div id="video18-output2">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
 
         </div>
     </div>
@@ -872,7 +993,7 @@
                     <p class="lead">Developed by Cristian Guti&eacute;rrez</p>
                     <p>ITM | 2016</p>
                     <p class="text-success">You are allowed to copy, distribute or use this software without any
-                        permission</p>
+                        permission of the owner</p>
                     <p>Github Repo: </p> <a href="https://github.com/yayobyte/php-workout" target="_blank">https://github.com/yayobyte/php-workout</a>
                 </div>
             </div>
@@ -888,163 +1009,7 @@
 <script src="js/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
-
-<script>
-
-    var cantOfVideos = 17;
-    function selectVideo(videoId) {
-        $('#home').hide();
-        $('#techContainers').hide();
-        $('#videos').show();
-        for (var i = 1; i < cantOfVideos + 1; i++) {
-            $('#video' + i).hide();
-        }
-        $('#video' + videoId).show(500);
-
-    }
-
-    function googleSearch() {
-        var q = $("#query").val();
-        var googleEndPoint = 'https://www.google.com.co/#q=';
-        window.open(googleEndPoint + q);
-    }
-
-    function sendName() {
-        $('#video8-container').hide();
-        var container = $('#video8-output2');
-        container.html("El nombre ingresado es: " + $('#name').val());
-        $('#video8-container').show(500);
-    }
-
-    function sendNameAndAge() {
-        $('#video13-container').hide();
-        var container = $('#video13-output2');
-        var estado = $('#age2').val() > 17 ? "mayor de edad" : "menor de edad";
-        container.html("El nombre ingresado es: " + $('#name2').val() + "<br>" + "es " + estado);
-        $('#video13-container').show(500);
-    }
-
-    function sendNameAndRadios() {
-        $('#video14-container').hide();
-        var container = $('#video14-output2');
-        var valor = $('input[name=radioEstudios]:checked').val();
-        var texto = "";
-        if (valor == 1) {texto = 'no tiene estudios'}
-        if (valor == 2) {texto = 'tiene Estudios Primarios'}
-        if (valor == 3) {texto = 'tiene estudios secundarios'}
-        container.html($('#name3').val() + " " + texto);
-        $('#video14-container').show(500);
-    }
-
-    function sumNumbers() {
-        $('#video15-container').hide();
-        var container = $('#video15-output2');
-        var operacion = $('input[name=radioSuma]:checked').val();
-        var n1 = parseInt($('#idSumNumber1').val());
-        var n2 = parseInt($('#idSumNumber2').val());
-        var resultado = operacion == 'sumar' ? (n1 + n2) : (n1 - n2);
-        container.html('Operacion: ' + operacion + " Resultado = " + resultado);
-        $('#video15-container').show(500);
-    }
-
-    function sumNumbersCheckBoxes() {
-        $('#video16-container').hide();
-        var container = $('#video16-output2');
-        var sumar = $('#idSumar10').is(':checked');
-        var restar = $('#idRestar10').is(':checked');
-        var n1 = parseInt($('#idSumNumber10_1').val());
-        var n2 = parseInt($('#idSumNumber10_2').val());
-
-        var sum = 0,sub = 0;
-        var text = '';
-        if (sumar) {
-            sum = n1 + n2;
-            text += ' la suma es : ' + sum ;
-        }
-        if (restar) {
-            sub = n1 - n2;
-            text += ' la resta es : ' + sub ;
-        }
-
-        container.html(text);
-        $('#video16-container').show(500);
-
-    }
-
-    function toggleContent(id) {
-        $('#videos').hide();
-        $('#home').hide(500);
-        $('#techContainers').show();
-        $('#' + id).toggle(500);
-    }
-
-    $.ajax('videos/video1.php')
-            .done(function (msg) {
-                $('#video1-output').html(msg);
-            });
-    $.ajax('videos/video2.php')
-            .done(function (msg) {
-                $('#video2-output').html(msg);
-            });
-    $.ajax('videos/video3.php')
-            .done(function (msg) {
-                $('#video3-output').html(msg);
-            });
-    $.ajax('videos/video4.php')
-            .done(function (msg) {
-                $('#video4-output').html(msg);
-            });
-    $.ajax('videos/video5.php')
-            .done(function (msg) {
-                $('#video5-output').html(msg);
-            });
-    $.ajax('videos/video6.php')
-            .done(function (msg) {
-                $('#video6-output').html(msg);
-            });
-    $.ajax('videos/video7.php')
-            .done(function (msg) {
-                $('#video7-output').html(msg);
-            });
-    $.ajax('videos/video8.php')
-            .done(function (msg) {
-                $('#video8-output').html(msg);
-            });
-    $.ajax('videos/video3_1.php')
-            .done(function (msg) {
-                $('#video9-output').html(msg);
-            });
-    $.ajax('videos/video6_1.php')
-            .done(function (msg) {
-                $('#video10-output').html(msg);
-            });
-    $.ajax('videos/video7_1.php')
-            .done(function (msg) {
-                $('#video11-output').html(msg);
-            });
-    $.ajax('videos/video7_2.php')
-            .done(function (msg) {
-                $('#video12-output').html(msg);
-            });
-    $.ajax('videos/video8_1.php')
-            .done(function (msg) {
-                $('#video13-output').html(msg);
-            });
-    $.ajax('videos/video9.php')
-            .done(function (msg) {
-                $('#video14-output').html(msg);
-            });
-    $.ajax('videos/video9_1.php')
-            .done(function (msg) {
-                $('#video15-output').html(msg);
-            });
-    $.ajax('videos/video10.php')
-            .done(function (msg) {
-                $('#video16-output').html(msg);
-            });
-
-
-
-</script>
+<script src="js/math.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
